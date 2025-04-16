@@ -1,3 +1,4 @@
+
 /* google font work sans add */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -80,6 +81,11 @@
 main > section{
   margin-top: 130px;
 }
+.team-description{
+  font-size: 1rem;
+  color: rgba(114, 114, 114, 1);
+
+}
 /* main section */
 main{
   max-width: 1400px;
@@ -94,28 +100,148 @@ main{
  gap: 20px;
 }
 .team-container{
-  width: 530px;
-  margin-left: 50px;
+  max-width: 530px;
+  margin-left: 100px;
   
 }
 .heading-1{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   
 }
 .heading-2{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .heading-3{
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #FF900E;
   font-weight: bold;
 }
 
-/* media */
+/* feature love section */
+.feature-love-container{
+  justify-content: center;
+  gap: 100px;
+}
+.different-feature{
+  max-width: 500px;
+}
+.different-feature-title{
+  font-size: 3rem;
+  font-weight: bold;
+  border-left: 8px solid #FF900E;
+  padding-left: 8px;
+  
+}
+.feature{
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+.architect-image-part{
+  max-width: 100%;
+}
+.experience-button{
+  position: relative;
+  top: -140px;
+  padding: 40px 48px;
+  background-color: #FF900E;
+  color: white;
+  border-style: none;
+  border-radius: 8px;
+  left: -40px;
+}
+.experience-title{
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* some facts: */
+.fact-items{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 120px auto;
+
+}
+.fact-item{
+  text-align: center;
+  border: 1px solid #FF900E;
+  padding: 38px 40px;
+  max-width: 241px;
+  max-height: 241px;
+  border-radius: 8px;
+}
+.fact-item-title{
+  font-size: 2rem;
+  margin: 0;
+}
+.fact-item-des{
+  font-size: 1rem;
+  color: rgba(114, 114, 114, 1);
+  margin: 0;
+}
+/* sponsor */
+.sponsor-contant{
+  text-align: center;
+  margin: 50px auto;
+}
+/* sponsor-items */
+.sponsor-items{
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 100px;
+}
+footer{
+  background-color: rgba(255, 244, 231, 1);
+  max-width: 1140px;
+  max-height: 80px;
+  margin: 0 auto;
+  /* padding: 5px; */
+  border-radius: 8px;
+  align-items: center;
+  margin-bottom: 100px;
+
+}
+.footer-contant{
+  text-align: center;
+  margin: 10px auto;
+  padding: 30px;
+}
+
+/* footer  */
+
+
+/* media small devices */
 @media screen and (max-width: 576px){
-  .nav-bar , .nav-link{
+  .nav-bar , .nav-link , .team , .feature-love-container , .fact-items , .sponsor-items{
     flex-direction: column;
   }
+  .team-image{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .team-container{
+    margin-left: 20px;
+  }
+  .fact-items , .sponsor-items{
+    gap: 40px;
+  }
 }
+
+
+/* medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+  .team , .feature-love-container{
+    flex-direction: column;
+  }
+  .team-container{
+    margin: 50px auto;
+  }
+  .experience-button{
+    left: 20px;
+  }
+} 
